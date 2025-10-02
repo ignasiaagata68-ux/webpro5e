@@ -11,7 +11,7 @@ $row = $result->fetch_assoc();
 ?>
 
 <h2>Update User Account</h2>
-<form action="update_users.php" method="post">
+<form action="update_user.php" method="post">
     <input type="hidden" name="id" value="<?= $row['id'] ?>"><br>
     Username: <br><input type="text" name="usr" value="<?= $row['username'] ?>" readonly><br>
     Fullname: <br><input type="text" name="fname" value="<?= $row['fullname'] ?>"><br>

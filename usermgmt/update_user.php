@@ -14,8 +14,9 @@ include '../connect.php';
 //update data
 $sql = "UPDATE users 
         SET fullname = '$fname',
-        role = '$role',
+            role = '$role'
         WHERE id = $userID";
+
 
 // VALUES ('$_POST[name]', '$_POST[desc]', '$_POST[price]')";
 
@@ -30,3 +31,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+
+
+
